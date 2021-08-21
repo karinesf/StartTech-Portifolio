@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,500;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Karine Soares</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="perfilKarine.jpg" alt="logo karine">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/karinesf">github</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:karinesf19@hotmail.com">email</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/88994190874">whatsapp</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name"> 
+                <h1>Karine Soares</h1>
+                <h5>Fullstack developer</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p>
+                    Olá, meu nome é Karine, tenho 29 anos, sou formada em Tecnologia em Hotelaria, estou cursando Análise e Desenvolvimento de Sistemas e aperfeiçoando meus conhecimentos na linguagem  de programação Python e JavaScript. Gosto de viajar, conhecer novos lugares e cultura e meu principal hobby é assistir séries, dentre elas: Outlander, Grey's Anatomy e The blacklist... Comecei no Curso de Ciências da Computação e depois migrei para Análise e Desenvolvimento de Sistemas, nesse processo, começou meu  interesse por programação, desde então venho fazendo cursos e acompanhando canais que me ajudam a aprimorar meus conhecimentos nas linguagens. Pretendo construir uma carreira como programadora.
+                </p>
+            </div>
+            <div class="form">
+                <div id="contato">
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate')
+            var display = document.getElementById('about');
+            display.classList.toggle('active')
+        }
+    </script>    
+</body>
+</html>
